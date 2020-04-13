@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    {{#if page.css_plugins}}
+    <!-- plugins for the current page -->
+    {{#each page.css_plugins}}
+    <link rel="stylesheet" href="{{this}}">
+    {{/each}}
+    {{/if}}
+
+
+    {{#if page.styles}}
+    <!-- current page styles -->
+    {{#each page.styles}}
+    <link rel="stylesheet" href="{{this}}">
+    {{/each}}
+    {{/if}}
+
+</head>
+{% body %}
+
+<!-- core plugins -->
+
+{{#if page.js_plugins}}
+<!-- plugins for the current page -->
+{{#each page.js_plugins}}
+<script src="{{this}}"></script>
+{{/each}}
+{{/if}}
+
+
+<!-- site-wide scripts -->
+
+{{#if page.scripts}}
+<!-- current page scripts -->
+{{#each page.scripts}}
+<script src="{{this}}"></script>
+{{/each}}
+{{/if}}
+</body>
+
+</html>

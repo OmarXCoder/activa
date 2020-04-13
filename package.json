@@ -1,0 +1,49 @@
+{
+    "name": "activa",
+    "version": "1.0.0",
+    "description": "A modern bootstrap 4 admin dashboard",
+    "main": "index.js",
+    "author": "Omar Ali<OmarXcoder@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "build": "gulp clean:dist && gulp build",
+        "build-all": "gulp clean:dist && gulp build:all",
+        "start": "gulp serve:dist",
+        "dev": "gulp serve"
+    },
+    "keywords": [
+        "admin",
+        "dashboard",
+        "bootstrap",
+        "admin",
+        "template",
+        "responsive"
+    ],
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "assemble": "^0.24.3",
+        "autoprefixer": "^9.7.6",
+        "browser-sync": "^2.26.7",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-copy": "^4.0.1",
+        "gulp-extname": "^0.2.2",
+        "gulp-flatten": "^0.4.0",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-if": "^3.0.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-uglify": "^3.0.2",
+        "klaw-sync": "^6.0.0",
+        "node-sass": "^4.13.1",
+        "pretty": "^2.0.0"
+    },
+    "dependencies": {
+        "bootstrap": "^4.4.1",
+        "jquery": "^3.5.0",
+        "popper.js": "^1.16.1"
+    },
+    "browserslist": [
+        "defaults"
+    ]
+}

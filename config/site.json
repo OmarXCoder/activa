@@ -1,0 +1,22 @@
+{
+    "title": "Activa",
+    "brand": "Activa",
+    "version": "1.0.1",
+    "description": "Activa is a premium adman dashboard template based on bootstrap",
+    "colors": {
+        "primary": "#39527b",
+        "success": "#60c84c",
+        "info": "#58d9e1",
+        "warning": "#ffc952",
+        "danger": "#ff7473",
+        "white": "#ffffff"
+    },
+    "packages": {
+        "jquery": ["node_modules/jquery/dist/jquery.js"],
+        "popper.js": ["node_modules/popper.js/dist/umd/popper.js"],
+        "bootstrap": [
+            "node_modules/bootstrap/dist/css/bootstrap.css",
+            "node_modules/bootstrap/dist/js/bootstrap.js"
+        ]
+    }
+}
